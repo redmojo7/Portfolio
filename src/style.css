@@ -18,6 +18,14 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.red {
+  color: #ff0000 !important;
+}
+
+.green {
+  color: #00ff00 !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -36,6 +44,10 @@ button:focus {
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bg-backend {
+  background-color: rgba(17, 16, 16, 0.678),
 }
 
 #preloader-none {
@@ -283,6 +295,11 @@ button:focus {
 .main-name {
   color: #cd5ff8;
 }
+
+.input-field {
+  width: 30px;
+}
+
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;

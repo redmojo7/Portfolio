@@ -70,6 +70,17 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link 
+                as={Link}
+                to="/brute"
+                onClick={() => updateExpanded(false)}
+              > 
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                Brute Force Lab 
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
