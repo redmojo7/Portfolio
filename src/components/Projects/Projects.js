@@ -9,6 +9,8 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import brute from "../../Assets/Labs/brute-force-attack.png"
+import phishing from "../../Assets/Labs/phishing-attack.png"
 
 function Projects() {
   return (
@@ -24,7 +26,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={chatify}
+              imgPath={brute}
               isBlog={false}
               title="Brute Force Attack"
               description="A brute force attack is a methodical and exhaustive cyber attack where an attacker tries all possible combinations of usernames and passwords to gain unauthorized access to a system or account."
@@ -34,7 +36,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={bitsOfCode}
+              imgPath={phishing}
               isBlog={false}
               title="Phishing"
               description="Dive into the world of phishing and learn about this prevalent cyber threat. Discover the techniques used by attackers to deceive individuals into revealing sensitive information or performing malicious actions. Gain insights into common phishing scams, email spoofing, and tips to protect yourself from falling victim to these fraudulent activities."
@@ -54,7 +56,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={leaf}
+              imgPath={editor}
               isBlog={false}
               title="comming soon..."
               description="comming soon..."
@@ -64,7 +66,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={suicide}
+              imgPath={editor}
               isBlog={false}
               title="comming soon..."
               description="comming soon..."
@@ -74,7 +76,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={emotion}
+              imgPath={editor}
               isBlog={false}
               title="comming soon..."
               description="comming soon..."

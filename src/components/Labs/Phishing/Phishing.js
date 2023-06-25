@@ -60,7 +60,7 @@ function Phishing() {
             question: "Scenario 7: PayPal - Receipt",
             image: phishing7,
             answer: true,
-            isCorrect: null,
+            userAnswer: null,
         },
         {
             id: 8,
@@ -127,12 +127,13 @@ function Phishing() {
                     <h1 className="project-heading">
                         Phishing <strong className="purple">Awareness Game</strong>
                     </h1>
-                    <Row className="mb-4">
+                    <Row className="mb-2 mt-3">
                         <Col md={3} />
                         {scenarios.map((scenario) => (
                             <Col key={scenario.id} className="text-center">
                                 <Button
-                                    variant={currentScenarioIndex === scenario.id - 1 ? "light" : "outline-light"}
+                                    className={currentScenarioIndex === scenario.id - 1 ? "dark" : ""}
+                                    variant={currentScenarioIndex === scenario.id - 1 ? "secondary" : scenario.userAnswer === scenario.answer ? "success" : scenario.userAnswer === null ? "light" : "danger"}
                                     onClick={() => handleNavigate(scenario.id - 1)}
                                     disabled={currentScenarioIndex === scenario.id - 1}
                                 >
@@ -143,23 +144,23 @@ function Phishing() {
                         <Col md={3} />
                     </Row>
                     {currentScenarioIndex < scenarios.length ? (
-                        <Card className="mb-4 bg-transparent purple">
+                        <Card className="mb-2 bg-transparent purple">
                             <Card.Body>
                                 <Card.Title>{scenarios[currentScenarioIndex].question}</Card.Title>
                                 <Row>
-                                    <Col md={6} className="text-center">
+                                    <Col md={{ span: 1, offset: 5 }} className="text-center">
                                         <Button variant="primary" onClick={() => handleAnswer(true)}>
                                             Yes
                                         </Button>
                                     </Col>
-                                    <Col md={6} className="text-center">
+                                    <Col md={{ span: 1, offset: 0 }} className="text-center">
                                         <Button variant="danger" onClick={() => handleAnswer(false)}>
                                             No
                                         </Button>
                                     </Col>
                                 </Row>
                             </Card.Body>
-                            <Card.Img variant="top" src={scenarios[currentScenarioIndex].image} />
+                            <Card.Img style={{ marginTop: "-2rem" }} variant="top" src={scenarios[currentScenarioIndex].image} />
                         </Card>
                     ) : (
                         <Container>

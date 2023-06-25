@@ -39,7 +39,8 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          {/*<img src={logo} className="img-fluid logo" alt="brand" />*/}
+          <strong className="purple">Cyber Lab</strong>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -72,7 +73,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/labs"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -82,6 +83,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+{/*
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -101,10 +103,10 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
-
+        */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/redmojo7/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
