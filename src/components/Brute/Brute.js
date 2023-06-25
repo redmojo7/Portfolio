@@ -12,11 +12,16 @@ function Brute() {
     const [user, setUser] = useState("");
     const [targetUsername, setTargetUsername] = useState("");
 
-    const handleStartAttack = (targetUsername) => {
+    const handleStartAttack = (targetUsername, isStart) => {
         console.log("Attack started");
-        setAttackStatus(new Date().toString());
-        setTargetUsername(targetUsername);
-    };
+        if (isStart) {
+            setAttackStatus(new Date().toString());
+            setTargetUsername(targetUsername);
+        } else {
+            setAttackStatus("stop");
+        }
+        
+    };  
 
     const hanldeRegister = (username, password) => {
         console.log("Register form submitted with username=", username, " and password=", password);

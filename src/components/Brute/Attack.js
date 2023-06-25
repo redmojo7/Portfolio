@@ -14,7 +14,12 @@ function Attack(props) {
             alert("Username is empty");
             return;
         }
-        props.startAttack(username);
+        props.startAttack(username, true);
+    };
+
+    const handleStopAttack = () => {
+        console.log("Attack status changed");
+        props.startAttack(username, false);
     };
 
     useEffect(() => {
@@ -42,6 +47,13 @@ function Attack(props) {
                     <Button className="mt-2" variant="primary" onClick={handleStartAttack}>
                         Launch Attack
                     </Button>
+                    <br />
+                    <Button className="mt-2" variant="primary" onClick={handleStopAttack}>
+                        STOP Attack
+                    </Button>
+                    <p className="mt-2 purple text-start">
+                    * Brute-force attack is time and resources consuming, it would take too long in the web browser
+                    </p>
                 </Col>
             </Row>
         </Container>

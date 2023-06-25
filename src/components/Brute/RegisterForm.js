@@ -33,7 +33,7 @@ function RegisterForm(props) {
                         </Form.Group>
 
                         <Form.Group className="mb-3 text-start" controlId="formBasicPassword">
-                            <Form.Label className="purple">Password</Form.Label>
+                            <Form.Label className="purple">Password (max. 3 lowercase letters)</Form.Label>
                             <Form.Control
                                 maxLength={3}
                                 type="password"

@@ -21,13 +21,13 @@ function Backend(props) {
                 setLogItems((prevItems) => {
                     // Add the new log item to the beginning of the array
                     const updatedItems = [
-                        { username: targetUsername, password: currentUser.password, status: newStatus },
-                        ...prevItems,
+                         ...prevItems,
+                         { username: targetUsername, password: currentUser.password, status: newStatus },
                     ];
 
                     // Limit the array to the last 10 items
                     if (updatedItems.length > 10) {
-                        updatedItems.pop();
+                        updatedItems.shift();
                     }
 
                     return updatedItems;
@@ -57,7 +57,7 @@ function Backend(props) {
                     <ListGroup variant="flush" className="bg-transparent">
                         {logItems.map((item, index) => (
                             <ListGroup.Item key={index} className="bg-transparent text-light">
-                                <strong className="text-danger">[Warning]&nbsp;</strong>
+                                <strong className={item.status === "failed" ? "text-danger":"text-success"}>[{item.status === "failed" ?"Warning":"Info"}]&nbsp;</strong>
                                 login&nbsp;"<strong className="text-purple">{item.username}</strong>"&nbsp;with password "
                                 <strong className="text-purple">{item.password}</strong>",&nbsp;
                                 <strong className={item.status === "failed" ? "text-danger" : "text-success"}>
