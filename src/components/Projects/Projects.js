@@ -11,6 +11,7 @@ import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import brute from "../../Assets/Labs/brute-force-attack.png"
 import phishing from "../../Assets/Labs/phishing-attack.png"
+import http from "../../Assets/Labs/http-attack.png"
 
 function Projects() {
   return (
@@ -46,11 +47,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={editor}
+              imgPath={http}
               isBlog={false}
-              title="comming soon..."
-              description="comming soon..."
-              ghLink="https://github.com/soumyajit4419/Editor.io"            
+              title="HTTPS Activity"
+              description="Explore the differences between HTTP and HTTPS protocols. Learn about the importance of encryption, secure communication, and data protection provided by HTTPS. Perform HTTP and HTTPS deposit and withdrawal activities to observe the variations in security and data transmission."
+              ghLink="/labs/https"          
             />
           </Col>
 

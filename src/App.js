@@ -18,6 +18,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Phishing from "./components/Labs/Phishing/Phishing";
+import HTTPSActivity from "./components/Labs/HTTPSActivity/HTTPSActivity";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -44,6 +45,8 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
           <Route path="/labs/brute" element={<Brute />} />
           <Route path="/labs/phishing" element={<Phishing />} />
+          <Route path="/labs/https" element={<HTTPSActivity /> } />
+
         </Routes>
         <Footer />
       </div>
