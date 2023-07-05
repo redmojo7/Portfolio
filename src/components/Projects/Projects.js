@@ -12,6 +12,7 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import brute from "../../Assets/Labs/brute-force-attack.png"
 import phishing from "../../Assets/Labs/phishing-attack.png"
 import http from "../../Assets/Labs/http-attack.png"
+import privilege from "../../Assets/Labs/privilege.png"
 
 function Projects() {
   return (
@@ -57,7 +58,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectLab
-              imgPath={editor}
+              imgPath={privilege}
               isBlog={false}
               title="File Disclosure & Privilege Escalation"
               description="Explore the concepts of file disclosure and privilege escalation in this engaging project. Discover the risks of insecure file handling and unauthorized access. Learn to manipulate parameters to access restricted files and escalate privileges. Crack passwords and gain unauthorized access to sensitive files. Capture the hidden flag to demonstrate successful privilege escalation."

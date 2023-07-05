@@ -302,6 +302,7 @@ function Privilege() {
               {isAnswerCorrect && (<strong className="purple m-2">Correct</strong>)}
             </p>
             <Button onClick={handleCheckAnswer}>Check Answer</Button>
+            <SSHConsole />
           </Col>
         );
       case 7:
