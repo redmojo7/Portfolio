@@ -51,7 +51,28 @@ function Projects() {
               isBlog={false}
               title="HTTPS Activity"
               description="Explore the differences between HTTP and HTTPS protocols. Learn about the importance of encryption, secure communication, and data protection provided by HTTPS. Perform HTTP and HTTPS deposit and withdrawal activities to observe the variations in security and data transmission."
-              ghLink="/labs/https"          
+              ghLink="/labs/https"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectLab
+              imgPath={editor}
+              isBlog={false}
+              title="File Disclosure & Privilege Escalation"
+              description="Explore the concepts of file disclosure and privilege escalation in this engaging project. Discover the risks of insecure file handling and unauthorized access. Learn to manipulate parameters to access restricted files and escalate privileges. Crack passwords and gain unauthorized access to sensitive files. Capture the hidden flag to demonstrate successful privilege escalation."
+              ghLink="/labs/privilege"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectLab
+              imgPath={editor}
+              isBlog={false}
+              title="comming soon..."
+              description="comming soon..."
+              ghLink="/labs/puzzle2"
             />
           </Col>
 
@@ -61,28 +82,7 @@ function Projects() {
               isBlog={false}
               title="comming soon..."
               description="comming soon..."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectLab
-              imgPath={editor}
-              isBlog={false}
-              title="comming soon..."
-              description="comming soon..."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectLab
-              imgPath={editor}
-              isBlog={false}
-              title="comming soon..."
-              description="comming soon..."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink="/labs/puzzle3"
             />
           </Col>
         </Row>

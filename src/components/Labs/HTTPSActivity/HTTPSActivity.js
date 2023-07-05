@@ -91,11 +91,14 @@ function HTTPSActivity() {
         <section>
             <Container fluid className="project-section">
                 <Container>
-                    <h1 className="purple">HTTP vs HTTPS Activity</h1>
+                    <h1 className="project-heading">
+                        HTTP vs HTTPS  <strong className="purple">Activity</strong>
+                    </h1>
                     <Row>
                         <Col>
                             <h5 className="purple mt-4">Total Balance: ${balance}</h5>
                             <NumericFormat
+                                className="mt-2"
                                 placeholder="Enter amount"
                                 value={amount}
                                 onValueChange={({ value }) => setAmount(value)}
@@ -123,7 +126,6 @@ function HTTPSActivity() {
                                     "Content-Type": "application/json",
                                     "Accept": "application/json",
                                     "Access-Control-Max-Age": "86400",
-                                    "X-Is-Secure": "false",
                                     "X-Is-Encrypted": "false",
                                     "Authentication": "Basic ZGVtbzpwQDU1dzByZA=="
                                 }}
@@ -143,7 +145,6 @@ function HTTPSActivity() {
                                     "Content-Type": "application/json",
                                     "Accept": "application/json",
                                     "Access-Control-Max-Age": "86400",
-                                    "X-Is-Secure": "false",
                                     "X-Is-Encrypted": "false",
                                     "Authentication": "Basic ZGVtbzpwQDU1dzByZA=="
                                 }}

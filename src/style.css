@@ -18,12 +18,20 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.bg-purple {
+  background-color: var(--imp-text-color) !important;
+}
+
 .red {
   color: #ff0000 !important;
 }
 
 .green {
   color: #00ff00 !important;
+}
+
+.scenario-step{
+  color: white !important;
 }
 
 button:focus {

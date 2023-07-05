@@ -182,7 +182,7 @@ function Phishing() {
                                         {scenario.userAnswer === scenario.answer ? (
                                             <span className="green" md={2}>Correct</span>
                                         ) : scenario.userAnswer === null ? (
-                                            <span className="red" md={2}>No answer</span>
+                                            <span className="purple" md={2}>No answer</span>
                                         ) : (
                                             <span className="red" md={2}>Incorrect</span>
                                         )}

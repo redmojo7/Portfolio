@@ -7,6 +7,9 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Brute from "./components/Labs/Brute/Brute";
+import Privilege from "./components/Labs/Privilege/Privilege";
+import Template from "./components/Labs/Template/Template";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -46,6 +49,9 @@ function App() {
           <Route path="/labs/brute" element={<Brute />} />
           <Route path="/labs/phishing" element={<Phishing />} />
           <Route path="/labs/https" element={<HTTPSActivity /> } />
+          <Route path="/labs/privilege" element={<Privilege /> } />
+          <Route path="/labs/puzzle2" element={<Template /> } />
+          <Route path="/labs/puzzle3" element={<Template /> } />
 
         </Routes>
         <Footer />
